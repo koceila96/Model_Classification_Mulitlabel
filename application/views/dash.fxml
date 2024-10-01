@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="stage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1044.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.DashController">
+   <children>
+      <Pane style="-fx-background-color: #FFF; -fx-background-radius: 10;">
+         <children>
+            <VBox prefHeight="576.0" prefWidth="207.0" style="-fx-background-color: #E5E5E5;">
+               <children>
+                  <ImageView fx:id="logo" fitHeight="73.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imgs/logo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="65.0" top="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Pane prefHeight="49.0" prefWidth="207.0">
+                     <children>
+                        <Line endX="-4.0" endY="-8.0" layoutX="31.0" layoutY="32.0" startX="148.0" startY="-8.0" stroke="#ddd1d1" />
+                     </children>
+                  </Pane>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="207.0" stylesheets="@../utils/fullpackstyling.css" text="Extraction">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imgs/icons8_details_24px_3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="254.0" prefWidth="207.0">
+                     <children>
+                        <Circle fx:id="shpActive" fill="WHITE" layoutX="53.0" layoutY="93.0" radius="7.0" stroke="#1cd95c" strokeType="INSIDE" />
+                        <Circle fill="WHITE" layoutX="53.0" layoutY="125.0" radius="7.0" stroke="#da1c1c" strokeType="INSIDE" />
+                        <Line endX="-4.0" endY="-8.0" layoutX="34.0" layoutY="43.0" startX="148.0" startY="-8.0" stroke="#ddd1d1" />
+                        <Label fx:id="lblActive" layoutX="77.0" layoutY="86.0" text="AIDER Koceila" textFill="#4a4747">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblOffline" layoutX="77.0" layoutY="117.0" text="SADOUDI Hacene" textFill="#4a4747">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblActive1" layoutX="22.0" layoutY="57.0" text="Travail présenté par le binome :  " textFill="#4a4747">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Pane layoutX="207.0" prefHeight="576.0" prefWidth="830.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Line endX="230.5" endY="1.707122802734375" layoutX="373.0" layoutY="109.0" startX="-93.0" startY="1.707122802734375" stroke="#ddd1d1" />
+                  <Label layoutX="249.0" layoutY="109.0" prefHeight="48.0" prefWidth="60.0" text="Nombre&#10;d'instances" textAlignment="CENTER" />
+                  <Label layoutX="334.0" layoutY="116.0" text="Nombre&#10;d'attributs" textAlignment="CENTER" />
+                  <Label layoutX="419.0" layoutY="116.0" text="Nombre&#10;de labels" textAlignment="CENTER" />
+                  <Label layoutX="510.0" layoutY="116.0" text="Taille&#10;App" textAlignment="CENTER" />
+                  <Line endX="598.0" endY="0.5" layoutX="133.0" layoutY="536.0" startX="-98.5" startY="0.5" stroke="#ddd1d1" />
+                  <Line endX="3.0" endY="-8.0" layoutX="271.0" layoutY="546.0" startX="3.0" startY="24.0" stroke="#ddd1d1" />
+                  <Label layoutX="33.0" layoutY="542.0" text="USTHB" textFill="#383839">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="288.0" layoutY="542.0" text="Extraction d'un Classificateur" textFill="#383839">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="651.0" layoutY="542.0" text="2019/2020" textFill="#383839">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Line endX="3.0" endY="-8.0" layoutX="518.0" layoutY="546.0" startX="3.0" startY="24.0" stroke="#ddd1d1" />
+                  <Label layoutX="20.0" layoutY="18.0" text="Propriétés" textFill="#383839" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#f94344" layoutX="809.0" layoutY="21.0" radius="14.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="398.0" layoutY="425.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="639.0" layoutY="425.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label fx:id="lblClose" alignment="CENTER" layoutX="795.0" layoutY="13.0" prefHeight="17.0" prefWidth="28.0" text="X" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="jComboBox1" layoutX="129.0" layoutY="61.0" onAction="#refreshComboBox" prefHeight="25.0" prefWidth="101.0" />
+                  <Label layoutX="33.0" layoutY="65.0" text="Base de données" />
+                  <Circle fill="#54aaf3" layoutX="605.0" layoutY="64.0" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label fx:id="TailleTest" alignment="CENTER" layoutX="591.0" layoutY="56.0" prefHeight="17.0" prefWidth="28.0" text="20" textFill="WHITE" />
+                  <Line endX="3.0" endY="1.0" layoutX="601.0" layoutY="93.0" startX="3.0" startY="17.207122802734375" stroke="#ddd1d1" />
+                  <Circle fill="#f94344" layoutX="524.0" layoutY="62.0" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label fx:id="TailleApp" alignment="CENTER" layoutX="510.0" layoutY="54.0" prefHeight="17.0" prefWidth="28.0" text="20" textFill="WHITE" />
+                  <Line endX="3.0" endY="1.0" layoutX="520.0" layoutY="92.0" startX="3.0" startY="17.207122802734375" stroke="#ddd1d1" />
+                  <Circle fill="#7989dd" layoutX="443.0" layoutY="63.0" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label fx:id="jTextField16" alignment="CENTER" layoutX="429.0" layoutY="55.0" prefHeight="17.0" prefWidth="28.0" text="20" textFill="WHITE" />
+                  <Line endX="3.0" endY="1.0" layoutX="440.0" layoutY="92.0" startX="3.0" startY="17.207122802734375" stroke="#ddd1d1" />
+                  <Label layoutX="590.0" layoutY="116.0" text="Taille&#10;Test" textAlignment="CENTER" />
+                  <Line endX="-3.0" endY="1.0" layoutX="746.0" layoutY="198.0" startX="-664.0" startY="1.0" stroke="#ddd1d1" />
+                  <Pane layoutX="17.0" layoutY="252.0" prefHeight="174.0" prefWidth="143.0" style="-fx-background-color: #E5E5E5; -fx-background-radius: 0;">
+                     <children>
+                        <TextField fx:id="txtf1" layoutX="54.0" layoutY="15.0" prefHeight="25.0" prefWidth="60.0" />
+                        <Label layoutX="14.0" layoutY="19.0" text="TP" />
+                        <TextField fx:id="txtf2" layoutX="54.0" layoutY="53.0" prefHeight="25.0" prefWidth="60.0" />
+                        <Label layoutX="14.0" layoutY="57.0" text="NG" />
+                        <TextField fx:id="txtf3" layoutX="54.0" layoutY="92.0" prefHeight="25.0" prefWidth="60.0" />
+                        <Label layoutX="14.0" layoutY="96.0" text="PC" />
+                        <TextField fx:id="txtf4" layoutX="54.0" layoutY="132.0" prefHeight="25.0" prefWidth="60.0" />
+                        <Label layoutX="14.0" layoutY="136.0" text="PM" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="16.0" layoutY="225.0" text="Paramètres" textFill="#383839" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="lancer" layoutX="20.0" layoutY="457.0" mnemonicParsing="false" onAction="#Construire_classificateur" prefHeight="25.0" prefWidth="136.0" text="Lancer le classificateur" />
+                  <Button fx:id="effacer" layoutX="20.0" layoutY="494.0" mnemonicParsing="false" onAction="#effacer" prefHeight="25.0" prefWidth="66.0" text="Effacer" />
+                  <Pane layoutX="175.0" layoutY="252.0" prefHeight="267.0" prefWidth="642.0" style="-fx-background-color: #E5E5E5; -fx-background-radius: 0;">
+                     <children>
+                        <TextField fx:id="jTextField3" editable="false" focusTraversable="false" layoutX="169.0" layoutY="194.0" prefHeight="25.0" prefWidth="60.0" />
+                        <Label layoutX="16.0" layoutY="198.0" text="Nombre de règles extraites" />
+                        <TextField fx:id="pricision" editable="false" focusTraversable="false" layoutX="320.0" layoutY="194.0" prefHeight="25.0" prefWidth="60.0" />
+                        <Label layoutX="257.0" layoutY="198.0" text="Précision" />
+                        <TextArea fx:id="jTextArea1" editable="false" focusTraversable="false" layoutX="12.0" layoutY="14.0" prefHeight="161.0" prefWidth="619.0" />
+                        <ProgressIndicator fx:id="progressbar" layoutX="16.0" layoutY="230.0" prefHeight="28.0" prefWidth="41.0" progress="0.0" />
+                        <ImageView fitHeight="68.0" fitWidth="60.0" layoutX="389.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imgs/icons8_compass_60px_2.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="449.0" layoutY="187.0" text="Dernière Analyse: 14 Septembre 2019" textFill="#4a4747">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="status" layoutX="449.0" layoutY="211.0" text="Status  Initial " textFill="#4a4747">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="jTextField32" layoutX="174.0" layoutY="196.0" prefHeight="20.0" prefWidth="52.0" />
+                        <Label fx:id="pricision2" layoutX="325.0" layoutY="198.0" prefHeight="17.0" prefWidth="48.0" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="175.0" layoutY="225.0" text="Résultats " textFill="#383839" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#364fcd" layoutX="361.0" layoutY="64.0" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label fx:id="jTextField2" alignment="CENTER" layoutX="347.0" layoutY="56.0" prefHeight="17.0" prefWidth="28.0" text="20" textFill="WHITE" />
+                  <Circle fill="#54aaf3" layoutX="280.0" layoutY="64.0" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label fx:id="jTextField1" alignment="CENTER" layoutX="266.0" layoutY="56.0" prefHeight="17.0" prefWidth="28.0" text="20" textFill="WHITE" />
+                  <Line endX="3.0" endY="1.0" layoutX="357.0" layoutY="92.0" startX="3.0" startY="17.207122802734375" stroke="#ddd1d1" />
+               </children>
+            </Pane>
+            <Line endX="3.0" endY="1.0" layoutX="483.0" layoutY="94.0" startX="3.0" startY="17.207122802734375" stroke="#ddd1d1" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
